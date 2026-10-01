@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для бизнеса — Бюро добрых дел</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="business.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       ШАПКА
+  ====================================================== -->
+  <header class="header header--static">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="images/logo/logo-header.svg" alt="Бюро добрых дел" class="header__logo-img">
+      </a>
+
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Главная</a>
+        <a href="index.html#services" class="header__nav-link">Услуги</a>
+        <a href="index.html#reviews" class="header__nav-link">Отзывы</a>
+        <a href="index.html#about" class="header__nav-link">О нас</a>
+        <a href="#contact" class="header__nav-link">Контакты</a>
+      </nav>
+
+      <div class="header__right">
+        <div class="header__messengers">
+          <a href="#" class="header__mess header__mess--max" aria-label="MAX">
+            <img src="images/icons/max.svg" alt="MAX">
+          </a>
+          <a href="https://wa.me/79522860806" class="header__mess header__mess--wa" aria-label="WhatsApp">
+            <img src="images/icons/whatsapp.svg" alt="WhatsApp">
+          </a>
+        </div>
+        <a href="https://t.me/MustWell" class="header__tg">
+          <span class="header__tg-icon">
+            <img src="images/icons/telegram.svg" alt="Telegram">
+          </span>
+          <span class="header__tg-text">telegram</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       БАННЕР 1920×1080
+  ====================================================== -->
+  <section class="hero-page">
+    <img src="images/photos/business.jpg" alt="" class="hero-page__img">
+
+    <div class="hero-page__content">
+
+      <!-- ЗАГОЛОВОК -->
+      <div class="container">
+        <a href="index.html" class="hero-page__back">← назад</a>
+        <h1 class="hero-page__title">Для Бизнеса</h1>
+      </div>
+
+      <!-- ПЕРВЫЙ РАЗДЕЛ -->
+      <div class="container">
+        <div class="section-item open">
+          <button class="section-item__header" onclick="toggleSection(this)">
+            <span class="section-item__title">IT и цифровые решения</span>
+            <span class="section-item__arrow">▼</span>
+          </button>
+          <div class="section-item__body">
+            <div class="services-list">
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Сайты и веб-сервисы</h3>
+                  <p class="service-row__desc">Разработка, доработка и поддержка сайтов</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Сайты и веб-сервисы')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Приложения и программы</h3>
+                  <p class="service-row__desc">Мобильные, веб и десктопные приложения</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Приложения и программы')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Telegram и боты</h3>
+                  <p class="service-row__desc">Боты, чат-боты и Mini App</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 5 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Telegram и боты')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Автоматизация</h3>
+                  <p class="service-row__desc">Интеграции, API и автоматизация процессов</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 10 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Автоматизация')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Серверы и поддержка</h3>
+                  <p class="service-row__desc">Настройка серверов и IT-поддержка</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 3 000 ₽/мес</span>
+                  <button class="service-row__btn" onclick="openOrder('Серверы и поддержка')">Заказать</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       ОСТАЛЬНЫЕ РАЗДЕЛЫ
+  ====================================================== -->
+  <section class="sections">
+    <div class="container">
+      <div class="sections__list">
+
+        <!-- 3D И ИЗГОТОВЛЕНИЕ -->
+        <div class="section-item">
+          <button class="section-item__header" onclick="toggleSection(this)">
+            <span class="section-item__title">3D и изготовление</span>
+            <span class="section-item__arrow">▼</span>
+          </button>
+          <div class="section-item__body">
+            <div class="services-list">
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">3D-моделирование</h3>
+                  <p class="service-row__desc">Детали, корпуса, механизмы</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 500 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('3D-моделирование')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">3D-печать</h3>
+                  <p class="service-row__desc">Пластик, металл, прототипы</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 500 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('3D-печать')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Проектирование</h3>
+                  <p class="service-row__desc">Детали, конструкции, чертежи</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Проектирование')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Восстановление</h3>
+                  <p class="service-row__desc">Копирование, реверс-инжиниринг</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Восстановление')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Прототипирование</h3>
+                  <p class="service-row__desc">Прототипы, образцы, макеты</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 2 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Прототипирование')">Заказать</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ПОМЕЩЕНИЯ И ОБОРУДОВАНИЕ -->
+        <div class="section-item">
+          <button class="section-item__header" onclick="toggleSection(this)">
+            <span class="section-item__title">Помещения и оборудование</span>
+            <span class="section-item__arrow">▼</span>
+          </button>
+          <div class="section-item__body">
+            <div class="services-list">
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Монтаж оборудования</h3>
+                  <p class="service-row__desc">Установка и подключение</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 2 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Монтаж оборудования')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Организация рабочих мест</h3>
+                  <p class="service-row__desc">Обустройство и перестановка</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 3 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Организация рабочих мест')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Вывески и декор</h3>
+                  <p class="service-row__desc">Изготовление и монтаж</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 3 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Вывески и декор')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Подготовка помещения</h3>
+                  <p class="service-row__desc">Подготовка к работе и открытию</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 2 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Подготовка помещения')">Заказать</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ПЕРЕЕЗДЫ -->
+        <div class="section-item">
+          <button class="section-item__header" onclick="toggleSection(this)">
+            <span class="section-item__title">Переезды и грузовые работы</span>
+            <span class="section-item__arrow">▼</span>
+          </button>
+          <div class="section-item__body">
+            <div class="services-list">
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Переезд бизнеса</h3>
+                  <p class="service-row__desc">Офис, магазин, склад, мастерская</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 7 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Переезд бизнеса')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Грузчики</h3>
+                  <p class="service-row__desc">Погрузка, разгрузка, перенос</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 500 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Грузчики')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Упаковка</h3>
+                  <p class="service-row__desc">Мебель, техника, хрупкие вещи</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Упаковка')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Доставка</h3>
+                  <p class="service-row__desc">Мебель, техника, заказы</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Доставка')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Вывоз</h3>
+                  <p class="service-row__desc">Мебель, техника, стройматериалы</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 2 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Вывоз')">Заказать</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕМОНТАЖ -->
+        <div class="section-item">
+          <button class="section-item__header" onclick="toggleSection(this)">
+            <span class="section-item__title">Демонтаж и освобождение</span>
+            <span class="section-item__arrow">▼</span>
+          </button>
+          <div class="section-item__body">
+            <div class="services-list">
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Демонтаж</h3>
+                  <p class="service-row__desc">Мебель, техника, оборудование</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Демонтаж')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Освобождение помещений</h3>
+                  <p class="service-row__desc">Офис, магазин, склад</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 5 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Освобождение помещений')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">После ремонта</h3>
+                  <p class="service-row__desc">Вынос мусора, уборка</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 3 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('После ремонта')">Заказать</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- МЕБЕЛЬ -->
+        <div class="section-item">
+          <button class="section-item__header" onclick="toggleSection(this)">
+            <span class="section-item__title">Мебель и оборудование</span>
+            <span class="section-item__arrow">▼</span>
+          </button>
+          <div class="section-item__body">
+            <div class="services-list">
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Сборка мебели</h3>
+                  <p class="service-row__desc">Офисная, торговая, кухонная</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 800 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Сборка мебели')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Разборка и перенос</h3>
+                  <p class="service-row__desc">Разборка, перенос, перестановка</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Разборка и перенос')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Ремонт мебели</h3>
+                  <p class="service-row__desc">Фурнитура, петли, ящики</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 500 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Ремонт мебели')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Изготовление</h3>
+                  <p class="service-row__desc">Мебель на заказ, корпуса</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 3 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Изготовление')">Заказать</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- РЕМОНТ И МОНТАЖ -->
+        <div class="section-item">
+          <button class="section-item__header" onclick="toggleSection(this)">
+            <span class="section-item__title">Ремонт и монтаж</span>
+            <span class="section-item__arrow">▼</span>
+          </button>
+          <div class="section-item__body">
+            <div class="services-list">
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Электрика</h3>
+                  <p class="service-row__desc">Розетки, светильники, кабель</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Электрика')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Сантехника</h3>
+                  <p class="service-row__desc">Смеситель, трубы, протечки</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Сантехника')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Монтаж</h3>
+                  <p class="service-row__desc">Оборудование, техника, конструкции</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Монтаж')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Мелкий ремонт</h3>
+                  <p class="service-row__desc">Стены, потолок, пол</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Мелкий ремонт')">Заказать</button>
+                </div>
+              </div>
+
+              <div class="service-row">
+                <div class="service-row__info">
+                  <h3 class="service-row__title">Сборка и настройка</h3>
+                  <p class="service-row__desc">Сборка, подключение, проверка</p>
+                </div>
+                <div class="service-row__right">
+                  <span class="service-row__price">от 1 000 ₽</span>
+                  <button class="service-row__btn" onclick="openOrder('Сборка и настройка')">Заказать</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       ФОРМА + КОНТАКТЫ
+  ====================================================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <div class="contact__form-col">
+          <h2 class="contact__title">Требуется помощь?</h2>
+          <p class="contact__subtitle">Оставьте контакты для связи.</p>
+
+          <form class="contact__form" id="contactForm">
+            <div class="contact__field">
+              <input type="text" name="name" placeholder="Имя" required>
+            </div>
+            <div class="contact__field">
+              <input type="tel" name="phone" placeholder="+7" required>
+            </div>
+            <div class="contact__field contact__field--textarea">
+              <textarea name="message" placeholder="Кратко опишите вопрос." maxlength="100" rows="4"></textarea>
+              <span class="contact__counter">0/100</span>
+            </div>
+            <button type="submit" class="contact__btn">Связаться</button>
+          </form>
+        </div>
+
+        <div class="contact__info-col">
+          <h3 class="contact__info-title">Контакты:</h3>
+          <ul class="contact__list">
+            <li><a href="tel:+79522860806">+7 (952) 286-08-06</a></li>
+            <li><a href="tel:+79537350696">+7 (953) 735-06-96</a></li>
+          </ul>
+          <div class="contact__text">
+            <p>Почта: <a href="mailto:it@mustwell.ru">it@mustwell.ru</a></p>
+            <p>Telegram: <a href="https://t.me/MustWell">@MustWell</a></p>
+          </div>
+          <div class="contact__messengers">
+            <a href="https://t.me/MustWell" class="contact__mess" aria-label="Telegram">
+              <img src="images/icons/telegram.svg" alt="Telegram">
+            </a>
+            <a href="https://wa.me/79522860806" class="contact__mess" aria-label="WhatsApp">
+              <img src="images/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+            <a href="#" class="contact__mess" aria-label="MAX">
+              <img src="images/icons/max.svg" alt="MAX">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       ФУТЕР
+  ====================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__col footer__col--brand">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <img src="images/logo/footer-logo.svg" alt="Бюро добрых дел" width="44" height="44">
+            </div>
+            <div class="footer__brand-text">
+              <div class="footer__name">Бюро добрых дел</div>
+              <div class="footer__slogan">
+                Сделаем <span class="footer__slogan-blue">всё</span> — от сайта до переезда
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__title">Контакты:</h4>
+          <ul class="footer__list">
+            <li><a href="tel:+79522860806">+7 (952) 286-08-06</a></li>
+            <li><a href="tel:+79537350696">+7 (953) 735-06-96</a></li>
+            <li><a href="mailto:it@mustwell.ru">Почта: it@mustwell.ru</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__title">Услуги</h4>
+          <ul class="footer__list">
+            <li><a href="home.html">Для дома</a></li>
+            <li><a href="business.html">Для бизнеса</a></li>
+            <li><a href="#">Нестандартные задачи</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__title">Компания</h4>
+          <ul class="footer__list">
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="index.html#reviews">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--mess">
+          <div class="footer__messengers">
+            <a href="https://t.me/MustWell" class="footer__mess" aria-label="Telegram">
+              <img src="images/icons/telegram.svg" alt="Telegram">
+            </a>
+            <a href="https://wa.me/79522860806" class="footer__mess" aria-label="WhatsApp">
+              <img src="images/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+            <a href="#" class="footer__mess" aria-label="MAX">
+              <img src="images/icons/max.svg" alt="MAX">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="business.js"></script>
+</body>
+</html>
